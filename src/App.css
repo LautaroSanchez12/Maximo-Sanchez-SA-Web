@@ -1,0 +1,186 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #555;
+}
+
+.hero-buttons {
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 0 8px;
+}
+
+.btn-primary {
+  background-color: #25d366;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #222;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  background-color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  flex: 1;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.header button {
+  margin-left: auto;
+}
+
+.products {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.products-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products-title {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.products-subtitle {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+.products-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #111;
+}
+
+.product-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h3 {
+  margin: 0;
+  color: white;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.product-action {
+  flex-shrink: 0;
+}
+
+.product-plus {
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 12px;
+  background-color: #222;
+  color: #bfbfbf;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.product-plus:hover {
+  background-color: #333;
+}
