@@ -26,7 +26,11 @@ function Contact() {
                         <p><strong>Teléfono:</strong> A confirmar</p>
                     </div>
 
-                    <button className="btn btn-primary" onClick={handleContactWhatsAppClick}>
+                    <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={handleContactWhatsAppClick}
+                    >
                         Escribir por WhatsApp
                     </button>
                 </div>
