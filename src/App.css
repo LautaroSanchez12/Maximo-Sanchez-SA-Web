@@ -60,6 +60,52 @@ body {
   flex-wrap: wrap;
 }
 
+.about {
+  padding: 80px 20px;
+  background-color: var(--bg-surface);
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-text h2 {
+  margin: 0 0 16px;
+  font-size: 36px;
+}
+
+.about-text p {
+  margin: 0 0 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.about-details {
+  display: grid;
+  gap: 16px;
+}
+
+.about-item {
+  padding: 20px;
+  border-radius: var(--radius);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border);
+}
+
+.about-item h3 {
+  margin: 0 0 10px;
+}
+
+.about-item p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

@@ -20,6 +20,7 @@ function Header() {
 
         <div className="header-center">
           <nav className="nav">
+            <a href="#about">Nosotros</a>
             <a href="#products">Productos</a>
             <a href="#contact">Contacto</a>
           </nav>
