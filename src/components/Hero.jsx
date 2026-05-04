@@ -13,8 +13,15 @@ function Hero() {
         <p className="hero-subtitle">Distribuimos sal para industrias, comercios y hogares</p>
 
         <div className="hero-buttons">
-          <button className="btn btn-secondary">Ver productos</button>
-          <button className="btn btn-primary" onClick={handleWhatsAppClick}>
+          <a className="btn btn-secondary" href="#products">
+            Ver productos
+          </a>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleWhatsAppClick}
+            aria-label="Contactar por WhatsApp"
+          >
             Contactar por WhatsApp
           </button>
         </div>

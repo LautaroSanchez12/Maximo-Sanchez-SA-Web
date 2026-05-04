@@ -5,14 +5,15 @@ import Contact from './components/Contact'
 import './App.css'
 
 function App() {
-
-  return ( 
+  return (
     <>
-  <Header />  
-  <Hero />
-  <Products />
-  <Contact />
-   </>
+      <Header />
+      <main>
+        <Hero />
+        <Products />
+        <Contact />
+      </main>
+    </>
   )
 }
 

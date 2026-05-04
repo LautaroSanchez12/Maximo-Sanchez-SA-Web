@@ -1,3 +1,16 @@
+:root {
+  --bg-page: #f8f8f8;
+  --bg-surface: #ffffff;
+  --bg-card: #111;
+  --text-primary: #111;
+  --text-secondary: #555;
+  --text-inverse: #fff;
+  --border: #eee;
+  --accent: #25d366;
+  --muted: #e0e0e0;
+  --radius: 12px;
+}
+
 *,
 *::before,
 *::after {
@@ -11,17 +24,9 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #111;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 .hero {
@@ -56,20 +61,24 @@ body {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .btn-primary {
-  background-color: #25d366;
-  color: white;
+  background-color: var(--accent);
+  color: var(--text-inverse);
 }
 
 .btn-secondary {
-  background-color: #e0e0e0;
+  background-color: var(--muted);
   color: #222;
 }
 
@@ -155,8 +164,8 @@ body {
   align-items: center;
   gap: 24px;
   padding: 20px;
-  border-radius: 12px;
-  background-color: #111;
+  border-radius: var(--radius);
+  background-color: var(--bg-card);
 }
 
 .product-image {
@@ -165,6 +174,17 @@ body {
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
+}
+
+.product-info p {
+  margin: 8px 0 0;
+  color: #ddd;
+}
+
+.product-price {
+  margin-top: 12px;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .product-info {

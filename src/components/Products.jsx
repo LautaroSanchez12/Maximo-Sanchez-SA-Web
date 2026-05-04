@@ -1,57 +1,6 @@
-function Products() {
-  const products = [
-    {
-      id: 1,
-      name: 'Sal Gruesa Lavada Seca Lisal x 25Kg.',
-      image: '/products/sal-gruesa-lavada-seca-lisal-25kg.jpg',
-    },
-    {
-      id: 2,
-      name: 'Sal Entrefina Lavada Seca Lisal x 25Kg.',
-      image: '/products/sal-entrefina-lavada-seca-lisal-25kg.jpg',
-    },
-    {
-      id: 3,
-      name: 'Sal Fina Lavada Seca Lisal x 25Kg.',
-      image: '/products/sal-fina-lavada-seca-lisal-25kg.jpg',
-    },
-    {
-      id: 4,
-      name: 'Sal Entrefina Común Lisal x 25Kg.',
-      image: '/products/sal-entrefina-comun-lisal-25kg.jpg',
-    },
-    {
-      id: 5,
-      name: 'Sal Gruesa Común Lisal x 25Kg.',
-      image: '/products/sal-gruesa-comun-lisal-25kg.jpg',
-    },
-    {
-      id: 6,
-      name: 'Sal Fina Lavada Seca Diamante x 25Kg.',
-      image: '/products/sal-fina-lavada-seca-diamante-25kg.jpg',
-    },
-    {
-      id: 7,
-      name: 'Sal Gruesa Lavada Diamante x 25Kg.',
-      image: '/products/sal-gruesa-lavada-diamante-25kg.jpg',
-    },
-    {
-      id: 8,
-      name: 'Sal Entrefina Lavada Seca Diamante x 25Kg.',
-      image: '/products/sal-entrefina-lavada-seca-diamante-25kg.jpg',
-    },
-    {
-      id: 9,
-      name: 'Sal Gruesa Común Diamante x 50Kg.',
-      image: '/products/sal-gruesa-comun-diamante-50kg.jpg',
-    },
-    {
-      id: 10,
-      name: 'Sal a Granel',
-      image: '/products/sal-a-granel.jpg',
-    },
-  ]
+import products from '../data/products'
 
+function Products() {
   const handleWhatsAppProduct = (productName) => {
     const message = `Hola, buenas. Quisiera consultar por el producto: ${productName}`
     const encodedMessage = encodeURIComponent(message)
@@ -81,10 +30,13 @@ function Products() {
 
               <div className="product-info">
                 <h3>{product.name}</h3>
+                <p>{product.description}</p>
+                <p className="product-price">{product.price}</p>
               </div>
 
               <div className="product-action">
                 <button
+                  type="button"
                   className="product-plus"
                   onClick={() => handleWhatsAppProduct(product.name)}
                   aria-label={`Consultar por ${product.name}`}

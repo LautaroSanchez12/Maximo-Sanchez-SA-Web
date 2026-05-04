@@ -26,7 +26,12 @@ function Header() {
         </div>
 
         <div className="header-right">
-          <button className="btn btn-primary" onClick={handleHeaderWhatsAppClick}>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleHeaderWhatsAppClick}
+            aria-label="Enviar mensaje por WhatsApp"
+          >
             WhatsApp
           </button>
         </div>
