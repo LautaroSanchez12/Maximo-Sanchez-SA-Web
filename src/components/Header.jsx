@@ -13,29 +13,23 @@ const handleHeaderWhatsAppClick = () => {
 function Header() {
   return (
     <header className="header">
-      <div className="header-container">
-        <div className="header-left">
-          <h2 className="logo">Maximo Sanchez SA</h2>
-        </div>
+      <div className="header-container header-container--compact">
+        <h2 className="logo">Maximo Sanchez SA</h2>
 
-        <div className="header-center">
-          <nav className="nav">
-            <a href="#about">Nosotros</a>
-            <a href="#products">Productos</a>
-            <a href="#contact">Contacto</a>
-          </nav>
-        </div>
+        <nav className="nav nav--compact">
+          <a href="#about">Nosotros</a>
+          <a href="#products">Productos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
 
-        <div className="header-right">
-          <button
-            type="button"
-            className="btn btn-primary"
-            onClick={handleHeaderWhatsAppClick}
-            aria-label="Enviar mensaje por WhatsApp"
-          >
-            WhatsApp
-          </button>
-        </div>
+        <button
+          type="button"
+          className="btn btn-primary btn-small"
+          onClick={handleHeaderWhatsAppClick}
+          aria-label="Enviar mensaje por WhatsApp"
+        >
+          WhatsApp
+        </button>
       </div>
     </header>
   )

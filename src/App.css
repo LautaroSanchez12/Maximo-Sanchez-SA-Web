@@ -139,30 +139,38 @@ body {
 .header-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px 20px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-container--compact {
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.header-left,
-.header-center,
-.header-right {
-  flex: 1;
-}
-
-.header-center {
-  display: flex;
-  justify-content: center;
-}
-
-.header-right {
-  display: flex;
-  justify-content: flex-end;
+.nav--compact a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .logo {
   margin: 0;
   font-size: 20px;
+}
+
+.btn-small {
+  padding: 10px 16px;
+  font-size: 14px;
 }
 
 .nav a {
